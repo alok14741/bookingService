@@ -1,0 +1,16 @@
+{
+  "first_name": "alok",
+  "last_name": "singh",
+  "date_of_birth": "08-08-1995",
+  "checkIn_dateTime": "1629704908000",
+  "checkOut_dateTime": "1629704908000",
+  "totalPrize": "4353.34",
+  "deposit": "34534",
+  "address":{
+    "line1":"line1 of address",
+    "line2":"line1 of address",
+    "city":"Surat",
+    "state":"Gujarat",
+    "zipcode": 394210
+  }
+}
