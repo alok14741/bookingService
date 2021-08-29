@@ -38,3 +38,51 @@ Thank you very much for your time to take this test. Please upload this complete
 - If you are not comfortable with jsonschema2pojo plugin, you can create your own POJOs
 - *Validations & Idempotency check are not mandatory for 90 minutes online test. However, if you complete it then you would be getting extra points for that.
 
+
+
+## Usage CURL Requests
+
+curl --silent --request POST 'http://localhost:8090/v1/bfs/booking' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "first_name": "alok",
+  "last_name": "singh",
+  "date_of_birth": "08-08-1995",
+  "checkIn_dateTime": "1629704908000",
+  "checkOut_dateTime": "1629704908000",
+  "totalPrize": "4353.34",
+  "deposit": "34534",
+  "address":{
+    "line1":"line1 of address",
+    "line2":"line1 of address",
+    "city":"Surat",
+    "state":"Gujarat",
+    "zipcode": 394210
+  }
+}'
+
+curl --silent --request GET 'http://localhost:8090/v1/bfs/booking' \
+--data-raw ''
+
+## Usage API
+POST : http://localhost:8090/v1/bfs/booking
+BODY : {
+  "first_name": "alok",
+  "last_name": "singh",
+  "date_of_birth": "08-08-1995",
+  "checkIn_dateTime": "1629704908000",
+  "checkOut_dateTime": "1629704908000",
+  "totalPrize": "4353.34",
+  "deposit": "34534",
+  "address":{
+    "line1":"line1 of address",
+    "line2":"line1 of address",
+    "city":"Surat",
+    "state":"Gujarat",
+    "zipcode": 394210
+  }
+}
+
+
+GET : http://localhost:8090/v1/bfs/booking
+
